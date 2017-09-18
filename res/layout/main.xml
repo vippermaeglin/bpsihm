@@ -1,0 +1,251 @@
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/tvEstacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="34dp"
+            android:layout_marginTop="40dp"
+            android:text="ESTAÇÃO:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/FontButton" />
+
+        <EditText
+            android:id="@+id/etEstacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvEstacao"
+            android:layout_below="@+id/tvEstacao"
+            android:ems="10"
+            android:inputType="number" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etEstacao"
+            android:layout_below="@+id/etEstacao"
+            android:layout_marginTop="27dp"
+            android:text="DESCRIÇÃO:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/FontButton" />
+
+        <EditText
+            android:id="@+id/etDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvDescricao"
+            android:layout_below="@+id/tvDescricao"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btIHM01"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="106dp"
+            android:layout_toRightOf="@+id/etEstacao"
+            android:background="@drawable/ihm_generic"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/btIHM02"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_toRightOf="@+id/btIHM01"
+            android:background="@drawable/ihm_generic" />
+
+        <Button
+            android:id="@+id/btIHM03"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/btIHM02"
+            android:background="@drawable/ihm_generic" />
+
+        <Button
+            android:id="@+id/btIHM04"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/tvDescricao"
+            android:layout_alignBottom="@+id/tvDescricao"
+            android:layout_alignLeft="@+id/btIHM01"
+            android:background="@drawable/ihm_generic" />
+
+        <Button
+            android:id="@+id/btIHM05"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/btIHM04"
+            android:layout_alignBottom="@+id/btIHM04"
+            android:layout_alignLeft="@+id/btIHM02"
+            android:background="@drawable/ihm_generic" />
+
+        <Button
+            android:id="@+id/btIHM06"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/btIHM05"
+            android:layout_alignBottom="@+id/btIHM05"
+            android:layout_alignLeft="@+id/btIHM03"
+            android:background="@drawable/ihm_generic" />
+
+        <Button
+            android:id="@+id/btIHM07"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/btIHM04"
+            android:layout_below="@+id/etDescricao"
+            android:layout_marginTop="51dp"
+            android:background="@drawable/ihm_generic" />
+
+        <Button
+            android:id="@+id/btIHM08"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/btIHM07"
+            android:layout_alignBottom="@+id/btIHM07"
+            android:layout_alignLeft="@+id/btIHM05"
+            android:background="@drawable/ihm_generic" />
+
+        <Button
+            android:id="@+id/btIHM09"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignBaseline="@+id/btIHM08"
+            android:layout_alignBottom="@+id/btIHM08"
+            android:layout_alignLeft="@+id/btIHM06"
+            android:background="@drawable/ihm_generic" />
+
+        <TextView
+            android:id="@+id/tvIHM01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etEstacao"
+            android:layout_alignRight="@+id/btIHM01"
+            android:text="IHM - 01"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvIHM02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btIHM02"
+            android:layout_below="@+id/btIHM02"
+            android:text="IHM - 02"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvIHM03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIHM02"
+            android:layout_alignBottom="@+id/tvIHM02"
+            android:layout_alignRight="@+id/btIHM03"
+            android:text="IHM - 03"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvIHM04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btIHM04"
+            android:layout_below="@+id/etDescricao"
+            android:text="IHM - 04"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etDescricao"
+            android:layout_below="@+id/tvIHM04"
+            android:text="ENVIAR"
+            android:textSize="@dimen/FontMessage" />
+
+        <TextView
+            android:id="@+id/tvIHM05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btEnviar"
+            android:layout_alignRight="@+id/btIHM05"
+            android:text="IHM - 05"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvIHM06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btEnviar"
+            android:layout_alignRight="@+id/btIHM06"
+            android:text="IHM - 06"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvIHM07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btIHM07"
+            android:layout_toLeftOf="@+id/btIHM02"
+            android:text="IHM - 07"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvIHM08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btIHM08"
+            android:layout_below="@+id/btIHM08"
+            android:text="IHM - 08"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvIHM09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvIHM08"
+            android:layout_alignBottom="@+id/tvIHM08"
+            android:layout_alignRight="@+id/btIHM09"
+            android:text="IHM - 09"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/etMensagens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btEnviar"
+            android:layout_alignRight="@+id/tvIHM09"
+            android:layout_below="@+id/tvIHM07"
+            android:layout_marginTop="25dp"
+            android:clickable="false"
+            android:duplicateParentState="false"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false"
+            android:scrollbars="horizontal|vertical" />
+
+        <TextView
+            android:id="@+id/tvMensagens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etMensagens"
+            android:layout_below="@+id/tvIHM07"
+            android:text="MENSAGENS:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+   

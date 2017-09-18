@@ -1,0 +1,53 @@
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvAbout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Este produto foi desenvolvido pela Gadget Automação como uma demonstração de aplicativo. Para saber mais sobre como adquirir entre em contato conosco:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvAbout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GADGET AUTOMAÇÃO"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tvAbout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(31)9221-0060         (31)8886-0834"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+
+        <WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </TableLayout>
